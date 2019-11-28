@@ -1,0 +1,13 @@
+name: C/C++ CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: makeit
+      run: g++ -std=c++14 -Wall -Wextra *.cpp
