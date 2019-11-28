@@ -75,3 +75,10 @@ void test2() {
 void test3() {
 
 }
+
+int main() {
+    test1();
+    
+    cout << "Done!" << endl;
+    return 0;
+}
